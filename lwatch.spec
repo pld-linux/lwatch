@@ -1,5 +1,5 @@
 Summary:	Colourizing a system logs for easier reading
-Summary(pl):	Koloruje logi systemowe
+Summary(pl):	Kolorowanie logów systemowych w celu ³atwiejszego czytania
 Name:		lwatch
 Version:	0.3
 Release:	1
@@ -11,16 +11,19 @@ URL:		http://sourceforge.net/projects/lwatch/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-lwatch is a log parser/analyzer written in C
-with the PCRE library. It is small and efficient.
-You are able to define your own colors using regexp patterns.
-The biggest advantage compared to other tools 
-written in Perl is its speed.
+lwatch is a log parser/analyzer written in C with the PCRE library. It
+is small and efficient. You are able to define your own colors using
+regexp patterns. The biggest advantage compared to other tools written
+in Perl is its speed.
 
-#%description -l pl
+%description -l pl
+lwatch to analizator logów napisany w C z u¿yciem biblioteki PCRE.
+Jest ma³y i wydajny. Pozwala definiowaæ w³asne kolory przy u¿yciu
+wzorców bêd±cych wyra¿eniami regularnymi. Najwiêksz± zalet± w
+porównaniu do innych narzêdzi, napisanych w Perlu, jest szybko¶æ.
 
 %prep
-%setup -q 
+%setup -q
 
 %build
 %configure
@@ -29,7 +32,8 @@ written in Perl is its speed.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -38,5 +42,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog README
 %attr(755,root,root) %{_bindir}/*
-%{_sysconfdir}/%{name}.conf
+%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/%{name}.conf
 %{_mandir}/*/*
