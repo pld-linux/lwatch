@@ -8,6 +8,7 @@ Group:		Applications/Console
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
 # Source0-md5:	90b054c2ca334cf01a7586c8cff8ab17
 URL:		http://sourceforge.net/projects/lwatch/
+BuildRequires:	pcre-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -43,4 +44,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog README
 %attr(755,root,root) %{_bindir}/*
 %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/%{name}.conf
-%{_mandir}/*/*
+%{_mandir}/man1/*
