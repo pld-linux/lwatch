@@ -1,12 +1,12 @@
 Summary:	Colourizing a system logs for easier reading
 Summary(pl):	Kolorowanie logów systemowych w celu ³atwiejszego czytania
 Name:		lwatch
-Version:	0.3
+Version:	0.4.1
 Release:	1
 License:	GPL
 Group:		Applications/Console
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
-# Source0-md5:	90b054c2ca334cf01a7586c8cff8ab17
+# Source0-md5:	25e5778ac0199a02288a0caf1c13e21b
 URL:		http://sourceforge.net/projects/lwatch/
 BuildRequires:	pcre-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
