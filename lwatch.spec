@@ -48,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
 %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/%{name}.conf
-%attr(750,root,root) %dir /var/lib/%{name}
-%attr(640,root,root) /var/lib/%{name}/syslog.fifo
+%attr(750,root,logs) %dir /var/lib/%{name}
+%attr(640,root,logs) /var/lib/%{name}/syslog.fifo
 %{_mandir}/man1/*.1*
 %{_mandir}/man5/*.5*
