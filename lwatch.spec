@@ -44,4 +44,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog README
 %attr(755,root,root) %{_bindir}/*
 %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/%{name}.conf
-%{_mandir}/man1/*
+%{_mandir}/man1/*.1*
+%{_mandir}/man5/*.5*
