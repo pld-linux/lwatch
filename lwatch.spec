@@ -5,7 +5,7 @@ Version:	0.4.1
 Release:	1
 License:	GPL v2
 Group:		Applications/Console
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/lwatch/%{name}-%{version}.tar.bz2
 # Source0-md5:	25e5778ac0199a02288a0caf1c13e21b
 URL:		http://sourceforge.net/projects/lwatch/
 # Should be used, but it's not:
@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/%{name}.conf
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/%{name}.conf
 %attr(750,root,logs) %dir /var/lib/%{name}
 %attr(640,root,logs) /var/lib/%{name}/syslog.fifo
 %{_mandir}/man1/*.1*
