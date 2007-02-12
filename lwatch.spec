@@ -1,5 +1,5 @@
 Summary:	Colourizing a system logs for easier reading
-Summary(pl):	Kolorowanie logów systemowych w celu ³atwiejszego czytania
+Summary(pl.UTF-8):   Kolorowanie logÃ³w systemowych w celu Å‚atwiejszego czytania
 Name:		lwatch
 Version:	0.4.1
 Release:	1
@@ -19,11 +19,11 @@ is small and efficient. You are able to define your own colors using
 regexp patterns. The biggest advantage compared to other tools written
 in Perl is its speed.
 
-%description -l pl
-lwatch to analizator logów napisany w C z u¿yciem biblioteki PCRE.
-Jest ma³y i wydajny. Pozwala definiowaæ w³asne kolory przy u¿yciu
-wzorców bêd±cych wyra¿eniami regularnymi. Najwiêksz± zalet± w
-porównaniu do innych narzêdzi, napisanych w Perlu, jest szybko¶æ.
+%description -l pl.UTF-8
+lwatch to analizator logÃ³w napisany w C z uÅ¼yciem biblioteki PCRE.
+Jest maÅ‚y i wydajny. Pozwala definiowaÄ‡ wÅ‚asne kolory przy uÅ¼yciu
+wzorcÃ³w bÄ™dÄ…cych wyraÅ¼eniami regularnymi. NajwiÄ™kszÄ… zaletÄ… w
+porÃ³wnaniu do innych narzÄ™dzi, napisanych w Perlu, jest szybkoÅ›Ä‡.
 
 %prep
 %setup -q
