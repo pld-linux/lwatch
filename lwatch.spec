@@ -1,5 +1,5 @@
 Summary:	Colourizing a system logs for easier reading
-Summary(pl.UTF-8):   Kolorowanie logów systemowych w celu łatwiejszego czytania
+Summary(pl.UTF-8):	Kolorowanie logów systemowych w celu łatwiejszego czytania
 Name:		lwatch
 Version:	0.4.1
 Release:	1
